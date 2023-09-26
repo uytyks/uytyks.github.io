@@ -18,13 +18,13 @@ function validate(){
     let num = document.getElementById("user_phone").value;
     let emsg = "";
     if (!notNull(fname)){
-        emsg += "Null First Name<br>";
+        emsg += "Please Enter a First Name<br>";
     }
     if (!notNull(lname)){
-        emsg += "Null Last Name<br>";
+        emsg += "Please Enter a Last Name<br>";
     }
     if (!notNull(area)){
-        emsg += "Invalid Message<br>";
+        emsg += "Please Enter a Message<br>";
     }
     if (!isEmail(email)){
         emsg += "Invalid Email Format<br>";
