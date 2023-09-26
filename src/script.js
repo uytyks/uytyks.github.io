@@ -16,11 +16,12 @@ function validate(){
     let area = document.getElementById("user_message").value;
     let email = document.getElementById("user_email").value;
     let num = document.getElementById("user_phone").value;
+    let emsg = "";
     if (!notNull(fname)){
-        document.write("Null First Name");
+        emsg += "Null First Name\n";
     }
     if (!notNull(lname)){
-        document.write("Null Last Name");
+        emsg += "Null Last Name\n";
     }
     if (!notNull(area)){
         alert("Invalid Message");
@@ -31,5 +32,6 @@ function validate(){
     if (!isPhoneNum(num)){
         alert("Invalid Phone Number");
     }
+    document.getElementById("error").innerHTML = emsg;
 }
 document.getElementById("submit").addEventListener("click", validate);
