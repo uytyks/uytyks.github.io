@@ -11,12 +11,22 @@ function isPhoneNum(num) {
     return regex.test(String(num).toLowerCase());
 }
 function validate(){
-    let name = document.getElementById("user_fname").value;
-    if(notNull(name)){
-        alert("good");
+    let fname = document.getElementById("user_fname").value;
+    let lname = document.getElementById("user_lname").value;
+    let area = document.getElementById("user_message").value;
+    let email = document.getElementById("user_email").value;
+    let num = document.getElementById("user_phone").value;
+    if (!notNull(fname)){
+        alert("Null First Name");
     }
-    else{
-        alert("bad");
+    if (!notNull(lname)){
+        alert("Null Last Name");
+    }
+    if (!isEmail(email)){
+        alert("Invalid Email Format");
+    }
+    if (!isPhoneNum(num)){
+        alert("Invalid Phone Number");
     }
 }
 document.getElementById("submit").addEventListener("click", validate);
