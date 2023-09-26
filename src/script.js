@@ -34,7 +34,27 @@ function validate(){
     }
     if(emsg.length == 0){
         document.getElementById("success").innerHTML = "Message Sent! :)";
-        return true;
+        const service_id = "contact_service";
+        const template_id = "contact_form";
+        var params = {
+            user_fname: fname,
+            user_lname: lname,
+            user_email: email,
+            user_phone: num,
+            user_message: area
+        };
+        emailjs.send(service_id, template_id, params)
+    .then(res=>{
+        document.getElementById("user_fname").value = "";
+        document.getElementById("user_lname").value = "";
+        document.getElementById("user_email").value = "";
+        document.getElementById("user_phone").value = "";
+        document.getElementById("user_message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
     }
     else{
         document.getElementById("error").innerHTML = emsg;

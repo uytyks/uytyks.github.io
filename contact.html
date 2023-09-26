@@ -6,16 +6,8 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 		<script type="text/javascript">
             (function() {
-                // https://dashboard.emailjs.com/admin/account
-                emailjs.init('hbzDBJHoMITkb7lWP');
+                emailjs.init("hbzDBJHoMITkb7lWP");
             })();
-        </script>
-        <script type="text/javascript">
-            window.onload = function() {
-                document.getElementById('contact-form').addEventListener('submit', function(event) {
-                    emailjs.sendForm('contact_service', 'contact_form', this);
-                });
-            }
         </script>
         <title>Contact Me!</title>
     </head>
@@ -45,7 +37,7 @@
                 <br>
                 <textarea name="user_message" id="user_message" placeholder="I'd love to hear from you!" rows="8" cols="60"></textarea>
                 <br><br>
-                <input id="submit "type="submit" value="Send">
+                <button id="submit">Submit!</button>
                 <p id="error"></p>
                 <p id="success"></p>
             </form>
