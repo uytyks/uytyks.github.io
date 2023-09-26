@@ -14,6 +14,6 @@ function validate(){
     let name = document.getElementById(user_fname);
     alert(name.value);
 }
-document.getElementById("").addEventListener("click", function(){
+document.getElementById("submit").addEventListener("click", function(){
     window.alert(document.getElementById("user_fname").value)
     });
