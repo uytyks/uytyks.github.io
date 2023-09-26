@@ -39,3 +39,6 @@ ul.circle {
   left: 50%; 
   bottom: 8px; 
 }
+.center {
+  margin: auto;
+}
