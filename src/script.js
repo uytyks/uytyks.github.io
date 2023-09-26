@@ -34,9 +34,11 @@ function validate(){
     }
     if(emsg.length == 0){
         document.getElementById("success").innerHTML = "Message Sent! :)";
+        return true;
     }
     else{
         document.getElementById("error").innerHTML = emsg;
+        return false;
     }
 }
 document.getElementById("submit").addEventListener("click", validate);
