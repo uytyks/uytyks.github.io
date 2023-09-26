@@ -27,11 +27,16 @@ function validate(){
         emsg += "Invalid Email Format<br>";
     }
     if (!isPhoneNum(num)){
-        emsg += "Invalid Phone Number<br>";
+        emsg += "Invalid Phone Number (format of XXX-XXX-XXXX)<br>";
     }
     if (!notNull(area)){
         emsg += "Please Enter a Message<br>";
     }
-    document.getElementById("error").innerHTML = emsg;
+    if(emsg.length == 0){
+        document.getElementById("success").innerHTML = "Message Sent! :)";
+    }
+    else{
+        document.getElementById("error").innerHTML = emsg;
+    }
 }
 document.getElementById("submit").addEventListener("click", validate);
