@@ -16,21 +16,23 @@
 		</div>
         <h1>Contact Me!</h1>
         <br><br>
-        <form class="center" onsubmit="return false">
-            <input type="text" placeholder="Last Name" name="user_lname" id="user_lname" />
-            <br><br>
-            <input type="text" placeholder="First Name" name="user_fname" id="user_fname" />
-            <br><br>
-            <input type="text" placeholder="Email" name="user_email" id="user_email" />
-            <!-- Using text above so I can contorl custom error message-->
-            <br><br>
-            <input type="tel" id="user_phone" name="user_phone" placeholder="Phone Number">
-            <br><br>
-            <span>Write Your Message Below!</span>
-            <br>
-            <textarea name="user_message" id="user_message" placeholder="I'd love to hear from you!" rows="8" cols="60"></textarea>
-            <br><br>
-            <button onclick="alerta();">Submit!</button>
-        </form>
+        <div class="center" >
+            <form onsubmit="return false">
+                <input type="text" placeholder="Last Name" name="user_lname" id="user_lname" />
+                <br><br>
+                <input type="text" placeholder="First Name" name="user_fname" id="user_fname" />
+                <br><br>
+                <input type="text" placeholder="Email" name="user_email" id="user_email" />
+                <!-- Using text above so I can contorl custom error message-->
+                <br><br>
+                <input type="tel" id="user_phone" name="user_phone" placeholder="Phone Number">
+                <br><br>
+                <span>Write Your Message Below!</span>
+                <br>
+                <textarea name="user_message" id="user_message" placeholder="I'd love to hear from you!" rows="8" cols="60"></textarea>
+                <br><br>
+                <button onclick="alerta();">Submit!</button>
+            </form>
+        </div>
     </body>
 </html>

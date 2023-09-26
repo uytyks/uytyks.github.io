@@ -40,5 +40,6 @@ ul.circle {
   bottom: 8px; 
 }
 .center {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
