@@ -15,6 +15,6 @@ function validate(){
         alert("what the helllll");
     }
 }
-function alert(){
+function alerta(){
     alert("WHOAOWOA");
 }
