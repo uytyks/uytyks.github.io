@@ -23,14 +23,14 @@ function validate(){
     if (!notNull(lname)){
         emsg += "Please Enter a Last Name<br>";
     }
-    if (!notNull(area)){
-        emsg += "Please Enter a Message<br>";
-    }
     if (!isEmail(email)){
         emsg += "Invalid Email Format<br>";
     }
     if (!isPhoneNum(num)){
         emsg += "Invalid Phone Number<br>";
+    }
+    if (!notNull(area)){
+        emsg += "Please Enter a Message<br>";
     }
     document.getElementById("error").innerHTML = emsg;
 }
