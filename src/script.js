@@ -11,10 +11,6 @@ function isPhoneNum(num) {
     return regex.test(String(num).toLowerCase());
 }
 function validate(){
-    if(!notNull(document.getElementById(user_fname).value)){
-        alert("what the helllll");
-    }
-}
-function alerta(){
+    console.log((document.getElementById(user_fname)).value);
     alert("WHOAOWOA");
 }
