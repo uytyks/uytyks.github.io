@@ -17,10 +17,10 @@ function validate(){
     let email = document.getElementById("user_email").value;
     let num = document.getElementById("user_phone").value;
     if (!notNull(fname)){
-        alert("Null First Name");
+        document.write("Null First Name");
     }
     if (!notNull(lname)){
-        alert("Null Last Name");
+        document.write("Null Last Name");
     }
     if (!notNull(area)){
         alert("Invalid Message");
