@@ -3,7 +3,7 @@ function notNull(value){
     return (value.length > 0);
 }
 function isEmail(email) {
-    let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{2,}[a-zA-Z0-9])?)*$/;
+    let regex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(com|net|org|edu|gov|dev)$/;
     return regex.test(String(email).toLowerCase());
    }
 function isPhoneNum(num) {
