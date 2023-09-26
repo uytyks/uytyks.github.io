@@ -43,6 +43,6 @@ ul.circle {
   margin-left: auto;
   margin-right: auto;
 }
-.error {
+#error {
   color: red;
 }

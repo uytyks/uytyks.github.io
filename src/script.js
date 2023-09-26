@@ -18,19 +18,19 @@ function validate(){
     let num = document.getElementById("user_phone").value;
     let emsg = "";
     if (!notNull(fname)){
-        emsg += "Null First Name\n";
+        emsg += "Null First Name<br>";
     }
     if (!notNull(lname)){
-        emsg += "Null Last Name\n";
+        emsg += "Null Last Name<br>";
     }
     if (!notNull(area)){
-        alert("Invalid Message");
+        emsg += "Invalid Message<br>";
     }
     if (!isEmail(email)){
-        alert("Invalid Email Format");
+        emsg += "Invalid Email Format<br>";
     }
     if (!isPhoneNum(num)){
-        alert("Invalid Phone Number");
+        emsg += "Invalid Phone Number<br>";
     }
     document.getElementById("error").innerHTML = emsg;
 }
