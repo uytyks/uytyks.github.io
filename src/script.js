@@ -22,6 +22,9 @@ function validate(){
     if (!notNull(lname)){
         alert("Null Last Name");
     }
+    if (!notNull(area)){
+        alert("Invalid Message");
+    }
     if (!isEmail(email)){
         alert("Invalid Email Format");
     }
