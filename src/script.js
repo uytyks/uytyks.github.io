@@ -1,4 +1,6 @@
 function sendMail(params){
+    const service_id = "contact_service";
+    const template_id = "contact_form";
     emailjs.send(service_id, template_id, params)
     .then(res=>{
         document.getElementById("user_fname").value = "";
@@ -48,8 +50,6 @@ function validate(){
     }
     if(emsg.length == 0){
         document.getElementById("success").innerHTML = "Message Sent! :)";
-        const service_id = "contact_service";
-        const template_id = "contact_form";
         var params = {
             user_fname: fname,
             user_lname: lname,
@@ -58,7 +58,9 @@ function validate(){
             user_message: area
         };
         sendMail(params);
-
+    }
+    else{
+        document.getElementById("error").innerHTML = emsg;
     }
 }
 document.getElementById("submit").addEventListener("click", validate);
