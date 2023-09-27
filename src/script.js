@@ -9,7 +9,6 @@ function sendMail(params){
         document.getElementById("user_phone").value = "";
         document.getElementById("user_message").value = "";
         console.log(res);
-        alert("Your message sent successfully!!")
     })
     .catch(err=>console.log(err));
 }
