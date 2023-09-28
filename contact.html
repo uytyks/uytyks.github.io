@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="/css/styles.css">
-        <script type="text/javascript" defer src="/src/script.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-		<script type="text/javascript">
+        <script defer src="/src/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script>
             (function() {
                 emailjs.init("hbzDBJHoMITkb7lWP");
             })();
@@ -24,11 +24,11 @@
         <br>
         <div class="center" >
             <form id="contact-form" onsubmit="return false">
-                <input type="text" placeholder="Last Name" name="user_lname" id="user_lname" />
+                <input type="text" placeholder="Last Name" name="user_lname" id="user_lname">
                 <br><br>
-                <input type="text" placeholder="First Name" name="user_fname" id="user_fname" />
+                <input type="text" placeholder="First Name" name="user_fname" id="user_fname">
                 <br><br>
-                <input type="text" placeholder="Email" name="user_email" id="user_email" />
+                <input type="text" placeholder="Email" name="user_email" id="user_email">
                 <!-- Using text above so I can contorl custom error message-->
                 <br><br>
                 <input type="tel" id="user_phone" name="user_phone" placeholder="Phone Number">
