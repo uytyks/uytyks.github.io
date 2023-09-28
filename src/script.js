@@ -8,6 +8,7 @@ function sendMail(params){
         document.getElementById("user_email").value = "";
         document.getElementById("user_phone").value = "";
         document.getElementById("user_message").value = "";
+        document.getElementById("error").innerHTML = "";
         console.log(res);
     })
     .catch(err=>console.log(err));
